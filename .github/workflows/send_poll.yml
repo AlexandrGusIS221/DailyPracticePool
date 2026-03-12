@@ -3,7 +3,7 @@ name: Send Daily Practice Poll
 on:
   schedule:
     # Запускаем каждый день с понедельника по субботу (1-6) в 04:00 UTC (09:00 по Екатеринбургу, UTC+5)
-    - cron: '20 5 * * 1-6'
+    - cron: '0 4 * * 1-6'
   workflow_dispatch:   # позволяет запускать вручную из интерфейса GitHub
 jobs:
   send-poll:
